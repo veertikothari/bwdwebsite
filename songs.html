@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <title>Songs</title>
+    </head>
+      <div class="rect">
+        <div class="frame">
+            <h1>Songs</h1>
+        </div>
+      </div>
+
+    
+<div class="sidenav">
+  <img class="Menu"  src="public/images/icon-menu.svg" />
+  <a href="homepage.html">Home</a>
+  <a href="songs.html">Songs</a>
+  <a href="playlist.html">Playlists</a>
+  <a href="singers.html">Singers</a>
+</div>
+      
+<div class="image-grid">
+    <div class="image-container">
+      <a href="https://youtu.be/mZQH8CPQ-wo?si=KboAcVreS30wGG0w" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwEzZNXJ7zqYiSB9WA3i4WkJ3uIlEGaEGbk-_w_nJW_wxwfEq&s" alt="Image 1">
+      </a>
+      <div class="image-description">With You</div>
+    </div>
+
+    <div class="image-container">
+        <a href="https://youtu.be/vX2cDW8LUWk?si=n7BFrozoJ8_rbzo1" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzaze6yjTQ9ps4Z-pSpkbRGVbjQn3qN3ARC65ALiFmTdSOI-2P&s" alt="Image 2">
+        </a>
+      <div class="image-description">Excuses</div>
+    </div>
+
+    <div class="image-container">
+        <a href="https://youtu.be/vNPwjl-TzQ0?si=HQnQV8ySTV5wDcyQ" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh0yavCLoo8oLcmxu48MlEdyD85pKSl8gg5cL7ar-PSMub5Rk&s" alt="Image 3">
+        </a>
+      <div class="image-description">Dil Nu</div>
+    </div>
+
+        <div class="image-container">
+            <a href="https://youtu.be/m4_9TFeMfJE?si=0vXSbiP55IaUgIif" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrjG2G3OROFOVEPhwslDyOllUk3wbjRB69UVFUXUVjuxzeGIs&s" alt="Image 4">
+            </a>
+            <div class="image-description">Paint the town red</div>
+        </div>
+        <div class="image-container">
+            <a href="https://youtu.be/dnHmh2ZPoHA?si=jr7JnY5yKYXxvwpe" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE7Cdr1hE62NwOYl5_K-azg4_wmSZfeU3eDXYVRnGsVnvXsDc&s" alt="Image 5">
+            </a>
+            <div class="image-description">Cupid</div>
+        </div>
+        <div class="image-container">
+            <a href="https://youtu.be/k2qgadSvNyU?si=mt_FTu43kjbaL-mI" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTANN80k4rZDrNoodTGbZaKlNOwxBCfnYMoMto4gYy-dWef244&s" alt="Image 6">
+            </a>
+            <div class="image-description">New rules</div>
+        </div>
+        <div class="image-container">
+            <a href="https://youtu.be/jCEdTq3j-0U?si=adY9H6IELRBDzeYe" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbia90poiSFhNdRqCvE1cf87Lo0xSuBTDpmwTtSj7jeZqguU&s" alt="Image 7">
+            </a>
+            <div class="image-description">Gallan Goodiyaan</div>
+        </div>
+        <div class="image-container">
+            <a href="https://www.youtube.com/watch?v=5Eqb_-j3FDA" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDeqBvymSpf1n-kfTBiK4zaKBsE2F8_DE2Q1ACR1obXQWFiupV&s" alt="Image 8">
+            </a>
+            <div class="image-description">Pasoori</div>
+        </div>
+        <div class="image-container">
+            <a href="https://www.youtube.com/watch?v=8hcQkCEXaWM" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQURpsxIozJBqHj2tDRdHhauBXDawNc3m6LGcVB-X-tku-o4Ug&s" alt="Image 9">
+            </a>
+            <div class="image-description">Dandelions</div>
+        </div>
+    </div>
+     
+    <script>    
+        // Function for image hovering
+        function hoverImage() {
+          // Show the image description
+          this.querySelector('.image-description').style.opacity = 1;
+        }
+        function unhoverImage(){
+          //Hide the image description
+          this.querySelector('.image-description').style.opacity = 0;
+        }
+        // Get all image containers
+        const imageContainers = document.querySelectorAll('.image-container');
+    
+        // Add an event listener to each image container
+        imageContainers.forEach(imageContainer => {
+          imageContainer.addEventListener('mouseover', hoverImage);
+          imageContainer.addEventListener('mouseout', unhoverImage);
+        });
+          </script>
+
+</body>     
+</html>
+
+<style>
+    .rect{
+        z-index: 10;
+        background-color: #143642;
+        right:0;
+        width: 1560px;
+        height: 90px;
+        overflow-y: auto; /* Enable horizontal scrolling */
+        white-space: wrap; /* Prevent line breaks */
+        position: fixed; /* Fixed position at the top */
+        top: 0; /* Stick to the top of the viewport */
+        left: 0; /* Align to the left */
+    }
+    .is-scrolling .rect{
+      background-color: #143642;
+    }
+    .frame{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 600px;
+        margin-left: 720px;
+    }
+    .Menu{
+        width: 32px; 
+        height: 32px;
+        align-items: left;
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    body{
+        background-color:#0F8B8D;
+        color: #DAD2D8;
+    }
+    h2{
+        margin-left: 160px; margin-top: 50px;
+    }
+    .h1{
+        color:#DAD2D8;font-size: 30px;
+    }
+ .sidenav {
+      height: 100%;
+      width: 160px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #143642;
+      overflow-x: hidden;
+      padding-top: 10px;
+    }
+    
+    .sidenav a {
+      padding-top: 30px;
+      padding-left: 20px;
+      text-decoration: none;
+      font-size: 25px;
+      display: block;
+      color: #DAD2D8;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    .main {
+      margin-left: 160px; /* Same as the width of the sidenav */
+      font-size: 28px; /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    /* images style */
+    .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+            gap: 10px; /* Gap between grid items */
+            margin-top: 95px;
+            margin-left: 150px;
+        }
+
+        /* Style for each grid item (image) */
+        .image-container {
+            position: relative;
+            display: inline-block;
+            
+        }
+
+        /* Style for the image */
+        .image-container img {
+            width: 450px;
+            height: 250px;
+            margin:10px;
+            transition: opacity 0.3s ease-in-out; /* Add a transition effect */
+        }
+
+        /* Style for the description */
+        .image-description {
+            position:absolute;
+            bottom: 0; 
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+            opacity: 0; /* Initially hidden */
+            /*transition: opacity 0.3s ease-in-out;*/
+        }
+        </style>

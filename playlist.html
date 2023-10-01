@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <title>Playlists</title>
+    </head>
+      <div class="rect">
+        <div class="frame">
+            <h1>Playlists</h1>
+        </div>
+      </div>
+
+
+<div class="sidenav">
+  <img class="Menu"  src="public/images/icon-menu.svg" />
+  <a href="homepage.html">Home</a>
+  <a href="songs.html">Songs</a>
+  <a href="playlist.html">Playlists</a>
+  <a href="singers.html">Singers</a>
+</div>
+      
+      <div class="list">
+        <div class="list-con">
+            <a href="https://spotify.link/pklf41RphDb" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtXbylRhF7RJv8P2jcQaC33x3HAKp9nuZ9CAjHhXHY6EBlg9um&s">
+            <h2>Hindi</h2>
+            </a>
+        </div>
+        <div class="list-con">
+            <a href="https://spotify.link/0sqf2GVphDb" target="_blank">
+            <img src="https://i.pinimg.com/236x/e5/35/4b/e5354b70486b148c5254e491bcf79c0c.jpg">
+            <h2>English</h2>
+            </a>
+        </div>
+        <div class="list-con">
+            <a href="https://spotify.link/L4PLYiRqhDb" target="_blank">
+              <img src="https://i.pinimg.com/236x/3a/06/79/3a0679a7ba39b0ddc1c7e2d2a39f2ac6.jpg">
+            <h2>Mix</h2>
+            </a>
+        </div>
+        <div class="list-con">
+          <a href="https://open.spotify.com/playlist/309V2n2J8CyrVcLgMPVxNp?si=8c493e161b0848d9" target="_blank">
+          <img src="https://i.pinimg.com/236x/70/ea/5e/70ea5eb7f1fe550d03e2d9cd3946aa6c.jpg">
+          <h2>Chill</h2>
+          </a>
+        </div>
+        <div class="list-con">
+          <a href="https://open.spotify.com/playlist/37i9dQZF1DX0XUfTFmNBRM?si=5282bf7a06644ca6" target="_blank">
+          <img src="https://i.pinimg.com/564x/ee/2c/b9/ee2cb910d219ae7f276fadbae2fc3196.jpg">
+          <h2>Love</h2>
+        </a>
+        </div>
+        <div class="list-con">
+          <a href="https://open.spotify.com/playlist/37i9dQZF1DWYRTlrhMB12D?si=1d2a1291b0494335" target="_blank">
+          <img src="https://i.pinimg.com/236x/e4/a0/75/e4a075126e1d4c61e2ef8927857ebae2.jpg">
+          <h2>Oldies</h2>
+        </a>
+        </div>
+        <div class="list-con">
+          <a href="spotify:playlist:37i9dQZF1DX7qK8ma5wgG1" target="_blank">
+          <img src="https://i.pinimg.com/236x/05/0e/ed/050eed115c61da5562985cdd48c12dbb.jpg">
+          <h2>Sad</h2>
+        </a>
+        </div>
+        <div class="list-con">
+          <a href="https://open.spotify.com/playlist/6l1TV7C21d3pNuM0EKPSkw?si=1189a85b536244a6" target="_blank">
+          <img src="https://i.pinimg.com/736x/cb/8b/98/cb8b98b0aeb733b3af8f4f4d6fe9cb83.jpg">
+          <h2>Study</h2>
+        </a>
+        </div>
+        
+</body>     
+</html>
+
+<style>
+    .rect{
+        z-index: 10;
+        background-color: #143642;
+        right:0;
+        width: 1560px;
+        height: 90px;
+        overflow-y: auto; /* Enable horizontal scrolling */
+        white-space: wrap; /* Prevent line breaks */
+        position: fixed; /* Fixed position at the top */
+        top: 0; /* Stick to the top of the viewport */
+        left: 0; /* Align to the left */
+    }
+    .is-scrolling .rect{
+      background-color: #143642;
+    }
+    .frame{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 600px;
+        margin-left: 720px;
+    }
+    .Menu{
+        width: 32px; 
+        height: 32px;
+        align-items: left;
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    body{
+        background-color:#0F8B8D;
+        color: #DAD2D8;
+    }
+    h2{
+        color: #DAD2D8;
+        
+    }
+    .h1{
+        color:#DAD2D8;font-size: 30px;
+    }
+ .sidenav {
+      height: 100%;
+      width: 160px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #143642;
+      overflow-x: hidden;
+      padding-top: 10px;
+    }
+    
+    .sidenav a {
+      padding-top: 30px;
+      padding-left: 20px;
+      text-decoration: none;
+      font-size: 25px;
+      display: block;
+      color: #DAD2D8;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    .main {
+      margin-left: 160px; /* Same as the width of the sidenav */
+      font-size: 28px; /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    .list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Three equal columns */
+            gap: 10px; /* Gap between grid items */
+            margin-top: 100px;
+            margin-left: 160px;
+        }
+
+    /* Style for each list item */
+    .list-con {
+            margin:10px;  
+    }
+    .h2{
+      margin-left: 20px;
+    }
+    .a{
+      text-decoration: none;
+
+    }
+    a:-webkit-any-link {
+    color:#DAD2D8;
+    cursor: pointer;
+    text-decoration: none ;
+  }
+
+  img{
+    width:224px;
+    height: 224px;
+  }
+    </style>
